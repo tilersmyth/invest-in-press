@@ -33,7 +33,9 @@ module.exports = {
   },
 
   // Database
-  databaseUrl: process.env.DATABASE_URL || 'sqlite:database.sqlite',
+  databaseUrl:
+    process.env.DATABASE_URL ||
+    'postgres://iip_admin:iip_password@localhost:5432/iip_dev',
 
   // Web analytics
   analytics: {
